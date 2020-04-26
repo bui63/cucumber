@@ -7,21 +7,9 @@ Feature: user wants to check  employee crud operation
 
 
     Examples:
-      | dob                      | ID | Name   |
-      | 2020-04-25T03:07:19.993Z | 1  | Rahul1 |
-      | 2020-04-25T03:07:19.993Z | 2  | Rahul2 |
-
-  @getUserByIdTest
-  Scenario Outline: user checks for GET By ID operation
-    Given user launches the application and send getById request
-    When  user gives id <ID> to see a particular record
-    Then  user recevies the id <ID>, name <Name>, dob <DOB>
-
-    Examples:
-    Examples:
-      | ID | Name   | DOB                      |
-      | 1  | Rahul1 | 2020-04-25T03:07:19.993Z |
-      | 2  | Rahul2 | 2020-04-25T03:07:19.993Z |
+      | dob        | ID | Name   |
+      | 10-02-1997 | 1  | Rahul1 |
+      | 10-02-1997 | 2  | Rahul2 |
 
 
   @getUserByIdTest
@@ -30,9 +18,8 @@ Feature: user wants to check  employee crud operation
     When  user gives id <ID> to see a particular record
     Then  user recevies the id <ID>, name <Name>, dob <DOB>
 
-    Examples:
-    Examples:
-      | ID | Name   | DOB                      |
-      | 1  | Rahul1 | 2020-04-25T03:07:19.993Z |
-      | 2  | Rahul2 | 2020-04-25T03:07:19.993Z |
 
+    Examples:
+      | ID | Name   | DOB        |
+      | 1  | Rahul  | 10-02-1997 |
+      | 2  | Rahul2 | 10-09-1994 |
