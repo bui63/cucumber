@@ -1,4 +1,4 @@
-Feature: user wants to check  employee crud operation
+Feature: user wants to check crud operation
 
   @postUserTest
   Scenario Outline: user wants to Add Users record
